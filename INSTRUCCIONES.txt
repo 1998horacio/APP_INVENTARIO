@@ -1,0 +1,27 @@
+1.- Primero se debe de tener instalado el sql server.
+
+2.- En la carpeta BaseDatos, tengo una carpeta y 3 archivos .sql
+  	.- si deseas empezar de 0 sin datos, implementa el archivo llamado S	QL_TABLAS_INVENTARIO_ACHTO
+	
+	.- si deseas empezar ya con datos, dentro de la carpeta BACKUP ACHTO 	CON DATOS esta un archivo llamado 	INVENTARIOACHTOBACKUP, solo lo 	implementas (en el mismo archivo tienes que modificar los links que    	vienen ahi 	conforme a tu link que tengas en tu pc)
+
+3.- Despues que tengas implementado ya sea con o sin datos, en la misma carpeta BaseDatos, estan dos archivos llamados PROCEDURE EMBARQUE y PROCEDURE RECIBO, tambien tienes que implementarlos en la base de datos ya que este hecho
+
+4.- Ahora, que ya tienes instalado tu sql server con tus base de datos configurado, tienes que modificar archivos JAVA, ya que con eso ayuda para poder hacer la conexion a tu base de datos. Esos archivos son:
+	
+	.- CARPETA EMBARQUE
+		.- RecyclerViewAdapterEmbarque
+		.-cantidad_embarque
+
+	.-CARPETA RECIBO
+		.-RecyclerViewAdapterRecibo
+		.-pantalla_recibo
+
+	.-SQL
+		.-DatabasConnection
+	
+	Estaras viendo algo como esto: 
+	"//192.168.0.170;databaseName=achto;user=SA;password=TOSCA"; // 
+	Te recomiendo que dejes el databaseName tal y como esta, ya que asi 	viene configurado los archivos .sql de los 	primeros pasos, pero el USER, PASSWORD y la direccio IP, te recomiendo que los cambien como tu los hayas puesto en 	la configuracion de tu sql server
+
+5.- Ya que hayas configurado todo, solo es cuestion de que instales la aplicacion, tengas encendido tu pc donde tengas tu base de datos y espero que funcione la aplicacion :)
